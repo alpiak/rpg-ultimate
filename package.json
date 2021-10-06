@@ -2,9 +2,9 @@
   "name": "rpg-ultimate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "jest test/"
+    "test": "tslint src/**/*.ts test/**/*.ts && jest test/"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
     "tslint": "^6.1.3",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "tmx-tiledmap": "^1.2.1"
   }
 }
